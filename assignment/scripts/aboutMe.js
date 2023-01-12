@@ -147,9 +147,8 @@ the default message.
 function opinion(adventurous) {
 return (adventurous ? 'Adventures are great!' : 'How about we stay home?');
 }
+console.log(opinion(adventurous));
 
-console.log(opinion(true));
-console.log(opinion(false));
 /* 
 For this question, I looked at an example online for a general format. It seemed like I needed
 to declare a new function with the value of the adventurous variable.
