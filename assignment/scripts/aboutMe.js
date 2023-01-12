@@ -122,7 +122,41 @@ switch (luckyNumber) {
     default:
         console.log('Luck is what happens when preparation meets opportunity');
 }
+/*
+For this question, I did a bit of digging online, and found multiple different
+solutions, but none of them were sticking for some reason. I managed to find a video
+on youtube that explained an example for it. From what I can guess, the switch statement 
+is based on the value of luckyNumber. For each case, it is checking if the value of 
+luckyNumber is 1, 2, or 3 respectively. If it was any of those, it would display 
+in the console their respective messages. If it was none of those, it would display 
+the default message.
+ */
+
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+/* 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
+ if it's not true, console log "How about we stay home?" */
 
+/*if (adventurous === true) {
+    console.log('Adventures are great!');
+} else {
+    console.log('How about we stay home?');
+}    
+*/
 
+function opinion(adventurous) {
+return (adventurous ? 'Adventures are great!' : 'How about we stay home?');
+}
+
+console.log(opinion(true));
+console.log(opinion(false));
+/* 
+For this question, I looked at an example online for a general format. It seemed like I needed
+to declare a new function with the value of the adventurous variable.
+The return seems like it would give the function a task to display messages based on the
+boolean value of adventurous. 
+Once determined, the console would display the message assigned to the function based on 
+the boolean value, which should display "How about we stay home?" in this case. 
+At least, this is my best guess.
+
+*/
